@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz!</title>
+</head>
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #96DDC8;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: ;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+    
+    .logo-image{
+    float: right;
+    width: 48px;
+    height: 48px;
+    
+
+}
+</style>
+ <head>
+<style>
+body {
+  background-image: url(Images/website%20bkg.png)
+}
+</style>
+<body>
+    <a class="topnav" href="/">
+      <div class="logo-image">
+            <img src="Images/official%20logo.jpg" class="img-fluid">
+      </div>
+</a>
+    <div class="topnav">
+  <a  href="home.html">Home</a>
+  <a href="Rock.html">Rock</a>
+  <a href="Jazz.html">Jazz</a>
+    <a href="Blues.html">Blues</a>
+        <a href="Pop.html">Pop</a>
+        <a href="Folk.html">Folk</a>
+    <a class="active" href="Quiz.html">Quiz</a>
+        <a href="FAQ.html">FAQ</a>
+  
+  </div>
+</div> <br>
+<center> <h1> The Music Quiz</h1>
+<h2> This quiz will test your musical knowledge after reading this website. Good luck!</h2>
+<h3> Answers are on the bottom of the page. No peeking!</h3>
+Q1. Which two instruments provide the rhythm in rock music?<br>
+<input type="radio" name="question1" id="correct1">Bass and Drums <br>
+<input type="radio" name="question1">Guitar and Bass<br>
+<input type="radio" name="question1">Drums and Guitar <br>
+<input type="radio" name="question1">None of the above <br>
+<br><br>
+Q2. Who wrote the hit "Money"?<br>
+<input type="radio" name="question2" >Led Zeppelin <br>
+<input type="radio" name="question2">The Beatles <br>
+<input type="radio" name="question2" id="correct2">Pink Floyd <br>
+<input type="radio" name="question2">Queen <br>
+<br><br>
+Q3. Which time signature is known as "common time"?<br>
+<input type="radio" name="question3" >2/4 <br>
+<input type="radio" name="question3"id="correct3">4/4 <br>
+<input type="radio" name="question3">3/4 <br>
+<input type="radio" name="question3">7/4 <br>
+<br><br>
+Q4. Who is known as "The King of Mississippi Delta Blues"?<br>
+<input type="radio" name="question4" >Louis Armstrong <br>
+<input type="radio" name="question4"id="correct4">Robert Johnson <br>
+<input type="radio" name="question4">John Coltrane <br>
+    <input type="radio" name="question4">Bobby Bland <br> </center>
+<br><br>
+    <center><input type="submit" name="submit" value="Submit Quiz" onClick="result()"></center>
+    <br><br><br><br><br><br><br>
+    <center> <h2> Answers</h2>
+    <h7> Q1 - A <br>
+         Q2 - C <br>
+         Q3 - B<br>
+        Q4 - B</h7></center> <br><br>
+          
+<script type="text/javascript">
+function result()
+{
+	var score=0;
+	if(document.getElementById('correct1').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct2').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct3').checked)
+		{	score++;
+		}
+    if(document.getElementById('correct4').checked)
+		{	score++;
+		}
+ alert("Your score is: " +score);
+ // to print on browser
+ // document.write("Your score is:"+score);
+}
+</script>
+</body>
+</html>
+
